@@ -14,7 +14,7 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ['Secret_key']
-
+#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL",  "sqlite:///blog.db")
 
 ckeditor = CKEditor(app)
 Bootstrap(app)
